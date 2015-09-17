@@ -54,6 +54,8 @@
 //        [CommonMethods saveManagedObject];
         
         
+        
+        
         NSLog(@"%@ %@ %@",obj.studentAddress.city,obj.studentAddress.state,obj.studentAddress.pincode);
         
     }

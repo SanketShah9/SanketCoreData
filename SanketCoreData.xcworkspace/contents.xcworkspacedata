@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SanketCoreData/Student.h">
+   </FileRef>
+   <FileRef
+      location = "group:SanketCoreData/Student.m">
+   </FileRef>
+   <FileRef
+      location = "group:SanketCoreData/Address.h">
+   </FileRef>
+   <FileRef
+      location = "group:SanketCoreData/Address.m">
+   </FileRef>
+   <FileRef
+      location = "group:SanketCoreData/Subject.h">
+   </FileRef>
+   <FileRef
+      location = "group:SanketCoreData/Subject.m">
+   </FileRef>
+   <FileRef
+      location = "group:SanketCoreData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

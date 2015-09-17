@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Address" representedClassName="Address" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pincode" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="addressStudent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="studentAddress" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="studentAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="addressStudent" inverseEntity="Address" syncable="YES"/>
+        <relationship name="studentSubject" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Subject" inverseName="subjectStudent" inverseEntity="Subject" syncable="YES"/>
+    </entity>
+    <entity name="Subject" representedClassName="Subject" syncable="YES">
+        <attribute name="idSubject" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="subjectStudent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="studentSubject" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Student" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Subject" positionX="-261" positionY="144" width="128" height="103"/>
+        <element name="Address" positionX="-2" positionY="146" width="128" height="103"/>
+    </elements>
+</model>
